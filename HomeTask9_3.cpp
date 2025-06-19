@@ -14,12 +14,7 @@ void revers(int* arr, int size)
 {
 	for (int i = 0; i < size / 2; i++)
 	{
-		int a, b;
-		a = *(arr + i);
-		b = *(arr + (size - 1) - i);
-		swap(a, b);
-		*(arr + i) = a;
-		*(arr + (size - 1) - i) = b;
+		swap(&arr[i], &arr[size-1-i]);
 	}
 
 }
